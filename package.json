@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-    "scripts": {
     "build": "gulp build",
     "dev": "gulp dev"
   },
-    "type": "module",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rodik5nizza/forkio-project1.git"
@@ -28,6 +25,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
