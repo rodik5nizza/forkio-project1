@@ -1,0 +1,19 @@
+{
+  "name": "forkio-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodik5nizza/forkio-project1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodik5nizza/forkio-project1/issues"
+  },
+  "homepage": "https://github.com/rodik5nizza/forkio-project1#readme"
+}
