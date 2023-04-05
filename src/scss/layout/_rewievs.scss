@@ -1,0 +1,95 @@
+.reweives {
+    background-image: url('../../../dist/img/rewieves/background-r1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-inline: $padding;
+    @include container-xs;
+    @media (min-width: $bp-s) {
+        background-image: url('../../../dist/img/rewieves/background-r2.jpg');
+    }
+    @media (min-width: $bp-l) {
+        padding-inline: 0;
+    }
+
+}
+
+.reweives__title {
+    padding-top: 57px;
+    @include fontMontserrat;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    @media (min-width: $bp-s) {
+        padding-top: 86px;
+    }
+    @media (min-width: $bp-m) {
+        padding-top: 108px;
+    }
+    @include container-l;
+}
+
+.reweives__wrapper{
+    @media (min-width: $bp-s) {
+        padding-top: 86px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 63px;
+        row-gap: 60px;
+    }
+    @media (min-width: $bp-m) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include container-l;
+    @media (min-width: $bp-l) {
+        padding-inline: 10px;
+    }
+}
+
+.reweives__item{
+    padding-top: 45px;
+    text-align: center;
+    &:first-child{
+        padding-top: 53px;
+        @media (min-width: $bp-s) {
+           padding-top: 0;
+        }
+    }
+    & p {
+        padding-top: 33px;
+        font-family: 'Lato';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    @media (min-width: $bp-s) {
+        padding-top: 0;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.reweives__description {
+    padding: 37px 25px 0;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #A291A5;
+    position: relative;
+
+    @media (min-width: $bp-s) {
+        padding: 67px 18px 0 26px;
+    }
+    @media (min-width: $bp-m) {
+        padding: 118px 160px 0;
+    }
+    @include container-l;
+    
+}

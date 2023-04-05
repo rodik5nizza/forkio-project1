@@ -1,0 +1,37 @@
+@mixin headerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8D81AC;
+    border-radius: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+@mixin hoverButton {
+    color: $primeryColor;
+    background: #FFFFFF;
+    border: 1px solid $primeryColor;
+}
+
+@mixin fontMontserrat {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin container-xs {
+    @media (max-width: $bp-xs) {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@mixin container-l {
+    @media (min-width: $bp-l) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,189 @@
+.price {
+    padding-top: 38px;
+    background-color: #4b3b4e;
+    padding-bottom: 97px;
+    @media (min-width: $bp-s) {
+        background-image: url('../../../dist/img/price/background-r1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 94px;
+    }
+    @include container-xs;
+    @media (min-width: $bp-m) {
+        background-position: top;
+        padding-bottom: 97px;
+    }
+}
+
+.price__title {
+    @include fontMontserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 245px;
+        height: 2px;
+        background-color: #645766;
+        top: -14px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+    }
+    @media (min-width: $bp-s) {
+        &::before {
+            top: -16px;
+            width: 555px;
+        }
+        padding: 109px $padding 39px;
+        font-size: 42px;
+        line-height: 44px;
+    }
+    @media (min-width: $bp-m) {
+        &::before{
+            width: 780px;
+        }
+        font-size: 48px;
+        line-height: 50px;
+        padding-block: 108px 61px;
+    }
+}
+
+.price__container{
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 290px);
+        align-items: center;
+        justify-content: center;
+        gap: 30px 25px;
+        padding-inline: $padding;
+    }
+    @media (min-width: $bp-l) {
+        grid-template-columns: repeat(4, 290px);
+        gap: 15px;
+        padding-inline: 0;
+        justify-items: center;
+    }
+    @include container-l;
+
+}
+
+.price__item {
+    width: 257px;
+    height: 457px;
+    background-color: #5f5161;
+    padding-bottom: 36px;
+    margin: 18px auto 0;
+    &:nth-child(3){
+        width: 299px;
+        height: 560px;
+        padding-bottom: 47px;
+        background-color: #473249;
+        & .price__item-title {
+            width: 299px;
+            padding: 43px 0;
+            background-color: #3f2d41;
+        }
+        & .price__item-wrapper{
+            padding-top: 14px;
+            & .price__item-sum{
+                font-size: 82px;
+                line-height: 84px;
+            }
+            & .price__item-period {
+                padding-top: 16px;
+                &::after {
+                    bottom: -46px;
+                }
+            }
+            & .price__item-advantage{
+                padding-top: 91px;
+                padding-bottom: 83px;
+            }
+        }
+    }
+    @media (min-width: $bp-s) {
+        background-color: #5f516189;
+    }
+    @media (min-width: $bp-m) {
+        margin: 0 0 0;
+    }
+}
+
+.price__item-title{
+    background-color: #695b6a;
+    @include fontMontserrat;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 36px 0;
+
+}
+
+.price__item-wrapper{
+    padding-top: 30px;
+    @include fontMontserrat;
+    color: #FFFFFF;
+    padding-inline: 30px;
+    
+}
+
+
+.price__item-sum {
+    font-size: 60px;
+    line-height: 62px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.price__item-period {
+    position: relative;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 5px;
+        background-color: $primeryColor;
+        bottom: -38px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.price__item-advantage{
+    padding-top: 73px;
+    padding-bottom: 37px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+}
+
+.price__item-button{
+    margin: 0 auto;
+    @include fontMontserrat;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #776b79;
+    padding: 15px 38px;
+    width: 163px;
+    height: 45px;
+    border-radius: 40px;
+}
+
